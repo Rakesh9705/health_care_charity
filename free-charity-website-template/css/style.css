@@ -247,6 +247,19 @@ a:focus {
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
     transition: .5s;
 }
+.website-logo {
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .website-logo {
+        height: 40px;
+        width: 40px;
+        margin-right: 6px;
+    }
+}
 
 .navbar .navbar-brand {
     margin: 0;
@@ -256,12 +269,22 @@ a:focus {
     font-weight: 700;
     letter-spacing: 5px;
     text-transform: uppercase;
+    margin-right: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .navbar-brand {
+        font-size: 9px;
+        margin-right: 0px;
+    }
 }
 
 .navbar .navbar-brand img {
     max-width: 100%;
     max-height: 40px;
 }
+
+
 
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .nav-link:focus,
@@ -2146,8 +2169,5 @@ a:focus {
 }
 
 
-.website-logo {
-    height: 80px;
-    width: 80px;
-    margin-right: 20px;
-}
+
+
