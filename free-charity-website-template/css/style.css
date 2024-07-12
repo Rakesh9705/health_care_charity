@@ -1550,8 +1550,14 @@ a:focus {
 
 /* gallary css */
 
-.gallary-img {
-    width: 310px;
+.gallery-img {
+    width: 420px;
+    height: 230px;
+    margin-bottom: 20px;
+}
+
+.gallery-img:hover {
+    transform: scale(1.1);
 }
 
 
