@@ -1555,10 +1555,13 @@ a:focus {
     width: 420px;
     height: 230px;
     margin-bottom: 20px;
+    overflow: hidden;
+    transition: all 0.5s ease;
 }
 
 .gallery-img:hover {
     transform: scale(1.1);
+    
 }
 
 
