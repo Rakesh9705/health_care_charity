@@ -1010,5 +1010,27 @@
 
         <!-- Icon Font libraries -->
         <script src="https://kit.fontawesome.com/2b1680067f.js" crossorigin="anonymous"></script>
+        
+        <!-- Form Submission -->
+        <script>
+            document.getElementById("VolunteerForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent the form from submitting normally
+                
+                // Get form data
+                var formData = new FormData(this);
+                var name = formData.get("name");
+                var message = formData.get("message");
+                
+                // Format message for WhatsApp
+                var whatsappMessage = "Hello, this is " + name + ". My message is: " + message;
+                
+                // Encode message for URL
+                var encodedMessage = encodeURIComponent(whatsappMessage);
+                
+                // Open WhatsApp with the message
+                window.open("https://wa.me/whatsappphonenumber?text=" + encodedMessage, "_blank");
+            });
+        </script>
+
     </body>
 </html>
