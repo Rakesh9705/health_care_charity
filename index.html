@@ -575,7 +575,7 @@
                     <p>Meet Our Team</p>
                     <h2>Awesome guys behind our charity activities</h2>
                 </div>
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
@@ -600,7 +600,7 @@
                             </div>
                             <div class="team-text">
                                 <h2>Manoj Sharma</h2>
-                                <p>Chef Executive</p>
+                                <p>####</p>
                                 <div class="team-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -617,7 +617,7 @@
                             </div>
                             <div class="team-text">
                                 <h2>Pokuri srinivasa Rao</h2>
-                                <p>Chef Advisor</p>
+                                <p>####</p>
                                 <div class="team-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -627,14 +627,31 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <!-- <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
                                 <img src="img/member-4.jpg" alt="Team Image">
                             </div>
                             <div class="team-text">
                                 <h2>C.V.S.S Gopal </h2>
-                                <p>Advisor</p>
+                                <p>####</p>
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/member-5.jpg" alt="Team Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Dama Ramarao</h2>
+                                <p>####</p>
                                 <div class="team-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -656,15 +673,15 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5">
                         <div class="volunteer-form">
-                            <form>
+                            <form id="VolunteerForm">
                                 <div class="control-group">
-                                    <input type="text" class="form-control" placeholder="Name" required="required" />
+                                    <input id="name" type="text" class="form-control" placeholder="Name" required="required" />
                                 </div>
                                 <div class="control-group">
-                                    <input type="email" class="form-control" placeholder="Email" required="required" />
+                                    <input id="email" type="email" class="form-control" placeholder="Email" required="required" />
                                 </div>
                                 <div class="control-group">
-                                    <textarea class="form-control" placeholder="Why you want to become a volunteer?" required="required"></textarea>
+                                    <textarea id="message" class="form-control" placeholder="Why you want to become a volunteer?" required="required"></textarea>
                                 </div>
                                 <div>
                                     <button class="btn btn-custom" type="submit">Become a volunteer</button>
@@ -886,13 +903,13 @@
                         <img class="gallery-img" src="./img/gallery-2.jpg" />
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img class="gallery-img" src="./img/gallery-3.jpeg" />
+                        <img class="gallery-img" src="./img/gallery-3.jpg" />
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img class="gallery-img" src="./img/gallery-4.jpg" />
+                        <img class="gallery-img" src="./img/gallery-4.png" />
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img class="gallery-img" src="./img/cause-3.png" />
+                        <img class="gallery-img" src="./img/gallery-5.jpg" />
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <img class="gallery-img" src="./img/gallery-6.jpg" />
@@ -1018,8 +1035,10 @@
                 
                 // Get form data
                 var formData = new FormData(this);
-                var name = formData.get("name");
-                var message = formData.get("message");
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var message = document.getElementById("message").value;;
+
                 
                 // Format message for WhatsApp
                 var whatsappMessage = "Hello, this is " + name + ". My message is: " + message;
@@ -1028,7 +1047,7 @@
                 var encodedMessage = encodeURIComponent(whatsappMessage);
                 
                 // Open WhatsApp with the message
-                window.open("https://wa.me/whatsappphonenumber?text=" + encodedMessage, "_blank");
+                window.open("https://wa.me/9398910016?text=" + encodedMessage, "_blank");
             });
         </script>
 
