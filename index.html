@@ -61,7 +61,7 @@
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
-                <img class="website-logo pl-0 ml-0" src="./img/website-logo.jpg" />
+                <img class="website-logo pl-0 ml-0" src="./img/website-logo.jpg" alt="website-logo" />
                 <a href="index.html" class="navbar-brand d-none d-md-block">Vasireddy Health Care Foundation</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -170,7 +170,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="about-img" data-parallax="scroll" data-image-src="img/gallery-1.jpeg"></div>
+                        <div class="about-img" data-parallax="scroll" data-image-src="img/gallery-1.jpeg" alt="about-img"></div>
                     </div>
                     <div class="col-lg-6">
                         <div class="section-header">
@@ -312,7 +312,7 @@
         
         
         <!-- Facts Start -->
-        <div class="facts" data-parallax="scroll" data-image-src="img/carousel-22.jpg">
+        <div class="facts" data-parallax="scroll" data-image-src="img/carousel-22.jpg" alt="facts-img">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
@@ -668,7 +668,7 @@
         
         
         <!-- Volunteer Start -->
-        <div class="volunteer" data-parallax="scroll" data-image-src-desktop="img/contact.jpg" data-image-src-mobile="img/volunteer.jpg">
+        <div id="Volunteer" class="volunteer" data-parallax="scroll" data-image-src-desktop="img/contact.jpg" data-image-src-mobile="img/contact-team.webp" alt="volunteer-img">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-5">
@@ -897,22 +897,22 @@
             <div class="container-fluid">
                 <div class="row text-center">
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img class="gallery-img" src="./img/gallery-1.jpeg" />
+                        <img class="gallery-img" src="./img/gallery-1.jpeg" alt="gallery-img" />
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img class="gallery-img" src="./img/gallery-2.jpg" />
+                        <img class="gallery-img" src="./img/gallery-2.jpg" alt="gallery-img" />
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img class="gallery-img" src="./img/gallery-3.jpg" />
+                        <img class="gallery-img" src="./img/gallery-3.jpg" alt="gallery-img" />
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img class="gallery-img" src="./img/gallery-4.png" />
+                        <img class="gallery-img" src="./img/gallery-4.png" alt="gallery-img" />
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img class="gallery-img" src="./img/gallery-5.jpg" />
+                        <img class="gallery-img" src="./img/gallery-5.jpg" alt="gallery-img" />
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img class="gallery-img" src="./img/gallery-6.jpg" />
+                        <img class="gallery-img" src="./img/gallery-6.jpg" alt="gallery-img" />
                     </div>
                     
                 </div>
@@ -1030,6 +1030,20 @@
         
         <!-- Form Submission -->
         <script>
+
+            const div = document.getElementById('Volunteer');
+            console.log(div)
+            const desktop = div.getAttribute('data-image-src-desktop');
+            const mobile = div.getAttribute('data-image-src-mobile');
+
+            if (window.innerWidth >= 768) {
+                div.setAttribute('data-image-src', `${desktop}`);
+            } else {
+                 div.setAttribute('data-image-src', `${mobile}`);
+            }
+
+            // console.log(div.getAttribute('data-image-src'))
+
             document.getElementById("VolunteerForm").addEventListener("submit", function(event) {
                 event.preventDefault(); // Prevent the form from submitting normally
                 
@@ -1049,6 +1063,7 @@
                 // Open WhatsApp with the message
                 window.open("https://wa.me/9398910016?text=" + encodedMessage, "_blank");
             });
+            
         </script>
 
     </body>
