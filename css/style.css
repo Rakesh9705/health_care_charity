@@ -570,7 +570,7 @@ a:focus {
     background-size: cover;
 }
 
-.page-header h2 {
+.page-header h1 {
     position: relative;
     color: #FDBE33;
     font-size: 60px;
@@ -579,7 +579,7 @@ a:focus {
     padding-bottom: 5px;
 }
 
-.page-header h2::after {
+.page-header h1::after {
     position: absolute;
     content: "";
     width: 100px;
@@ -621,7 +621,7 @@ a:focus {
         height: 230px;
     }
     
-    .page-header h2 {
+    .page-header h1 {
         font-size: 45px;
     }
     
@@ -635,7 +635,7 @@ a:focus {
         padding: 45px 0;
     }
     
-    .page-header h2 {
+    .page-header h1 {
         font-size: 35px;
     }
     
@@ -664,26 +664,26 @@ a:focus {
     color: #FDBE33;
 }
 
-.section-header h2 {
+.section-header h1 {
     margin: 0;
     font-size: 45px;
     font-weight: 700;
 }
 
 @media (max-width: 991.98px) {
-    .section-header h2 {
+    .section-header h1 {
         font-size: 45px;
     }
 }
 
 @media (max-width: 767.98px) {
-    .section-header h2 {
+    .section-header h1 {
         font-size: 40px;
     }
 }
 
 @media (max-width: 575.98px) {
-    .section-header h2 {
+    .section-header h1 {
         font-size: 35px;
     }
 }
