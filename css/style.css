@@ -379,11 +379,6 @@ a:focus {
     flex-direction: column;
 }
 
-@media (max-width: 992px) {
-    .carousel .carousel-item {
-        /* height: 50%; */
-    }
-}
 
 .carousel .carousel-img {
     position: relative;
@@ -397,6 +392,7 @@ a:focus {
 
 .carousel .carousel-img::after {
     position: absolute;
+    width: 100%;
     content: "";
     top: 0;
     right: 0;
