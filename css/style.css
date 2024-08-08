@@ -149,7 +149,7 @@ a:focus {
 /**********************************/
 .top-bar {
     position: absolute;
-    background-color: #4a4c70;
+    background-color: #7ed0f3;
     height: 45px;
     width: 100%;
     top: 0;
@@ -375,7 +375,7 @@ a:focus {
     /* background-color: green; */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
 }
 
