@@ -313,7 +313,6 @@ a:focus {
         position: absolute;
         width: 100%;
         top: 45px;
-        padding: 20px 60px;
         background: transparent !important;
         border-bottom: 1px solid rgba(255, 255, 255, .3);
         z-index: 9;
