@@ -1350,7 +1350,7 @@ a:focus {
 
 .volunteer .volunteer-form {
     padding: 90px 30px;
-    background: #FDBE33;
+    background:green;
 }
 
 .volunteer .volunteer-form .control-group {
@@ -1633,11 +1633,12 @@ a:focus {
 /* gallary css */
 
 .gallery-img {
-    width: 420px;
-    height: 230px;
+    width: 320px;
+    height: 280px;
     margin-bottom: 20px;
     overflow: hidden;
     transition: all 0.5s ease;
+    border-radius: 15px;
 }
 
 @media (max-width: 992px) {
