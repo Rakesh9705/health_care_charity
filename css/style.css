@@ -2334,3 +2334,7 @@ a:focus {
     height: 200px;
 }
 
+.gallery-img {
+    border: 5px solid green; /* Bold green border */
+    cursor: pointer;
+}
