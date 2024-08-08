@@ -188,7 +188,7 @@ a:focus {
 
 .top-bar .text i {
     font-size: 16px;
-    color: #FDBE33;
+    color:white;
     margin-right: 5px;
 }
 
@@ -213,7 +213,7 @@ a:focus {
     width: 45px;
     height: 100%;
     font-size: 16px;
-    color: #FDBE33;
+    color: black;
     border-right: 1px solid rgba(255, 255, 255, .3);
 }
 
@@ -222,8 +222,8 @@ a:focus {
 }
 
 .top-bar .social a:hover {
-    color: #ffffff;
-    background: #FDBE33;
+    color:green;
+    background: white;
 }
 
 @media (min-width: 992px) {
@@ -466,7 +466,7 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FDBE33;
+    color: #1E8BB8;
     background: rgba(256, 256, 256, .2);
     font-size: 22px;
     transition: .3s;
@@ -475,7 +475,7 @@ a:focus {
 .carousel .owl-nav .owl-prev:hover,
 .carousel .owl-nav .owl-next:hover {
     color: #ffffff;
-    background: #FDBE33;
+    background:green;
 }
 
 .carousel .owl-nav .owl-prev {
@@ -2331,3 +2331,4 @@ a:focus {
     width: 200px;
     height: 200px;
 }
+
