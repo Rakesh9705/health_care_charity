@@ -118,7 +118,7 @@ a:focus {
 .back-to-top {
     position: fixed;
     display: none;
-    background: #FDBE33;
+    background: #1E8BB8;
     width: 44px;
     height: 44px;
     text-align: center;
@@ -131,12 +131,12 @@ a:focus {
 }
 
 .back-to-top i {
-    color: #4a4c70;
+    color: white;
     padding-top: 10px;
 }
 
 .back-to-top:hover {
-    background: #4a4c70;
+    background: black;
 }
 
 .back-to-top:hover i {
@@ -1350,7 +1350,7 @@ a:focus {
 
 .volunteer .volunteer-form {
     padding: 90px 30px;
-    background: #FDBE33;
+    background:green;
 }
 
 .volunteer .volunteer-form .control-group {
@@ -1633,11 +1633,12 @@ a:focus {
 /* gallary css */
 
 .gallery-img {
-    width: 420px;
-    height: 230px;
+    width: 320px;
+    height: 280px;
     margin-bottom: 20px;
     overflow: hidden;
     transition: all 0.5s ease;
+    border-radius: 15px;
 }
 
 @media (max-width: 992px) {
@@ -2333,3 +2334,7 @@ a:focus {
     height: 200px;
 }
 
+.gallery-img {
+    border: 5px solid green; /* Bold green border */
+    cursor: pointer;
+}
