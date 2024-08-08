@@ -182,6 +182,7 @@ a:focus {
     border-left: 1px solid rgba(255, 255, 255, .3);
 }
 
+
 .top-bar .text:last-child {
     border-right: 1px solid rgba(255, 255, 255, .3);
 }
@@ -193,9 +194,9 @@ a:focus {
 }
 
 .top-bar .text p {
-    color: #ffffff;
+    color: black;
+    font-weight: bold;
     font-size: 16px;
-    font-weight: 500;
     margin: 0;
 }
 
@@ -321,7 +322,7 @@ a:focus {
     }
     
     .navbar.nav-sticky {
-        padding: 10px 60px;
+        /* padding: 10px 60px; */
         background: black !important;
         border-bottom: none;
     }
@@ -720,6 +721,11 @@ a:focus {
     }
 }
 
+.learn-about-card {
+    background-color: #1E8BB8;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -2px -2px 4px rgba(0, 0, 0, 0.3);
+
+}
 
 
 .about .about-tab {
@@ -786,9 +792,14 @@ a:focus {
 /********* Service CSS *********/
 /*******************************/
 .service {
+    background-color: green;
     position: relative;
     width: 100%;
-    padding: 45px 0 15px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 40px 0 15px 0;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
 .service .service-item {
@@ -1092,7 +1103,7 @@ a:focus {
     margin-top: 10px;
     font-size: 60px;
     line-height: 60px;
-    color: #FDBE33;
+    color: #1E8BB8;
 }
 
 .facts .facts-text {
