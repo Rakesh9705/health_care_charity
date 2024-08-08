@@ -777,7 +777,7 @@ a:focus {
 .bio-section {
     margin: 40px;
     padding: 35px;
-    background-color: #4a4c70 ;
+    background-color: green ;
     color: #ffffff;
     font-size: 18px;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
@@ -853,6 +853,7 @@ a:focus {
 
 .service .service-text h3 {
     margin-bottom: 10px;
+    color: #ffffff;
     font-size: 22px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -860,6 +861,7 @@ a:focus {
 
 .service .service-text p {
     margin: 0;
+    color: #ffffff;
 }
 
 
@@ -1435,6 +1437,11 @@ a:focus {
     height: 300px;
 }
 
+.event-img {
+        border: 5px solid green; /* Bold green border */
+        cursor: pointer;
+}
+
 .event .event-content {
     padding: 15px;
     height: 280px;
@@ -1693,7 +1700,7 @@ a:focus {
     margin: 0 auto;
     margin-top: -150px;
     padding: 30px;
-    background: #FDBE33;
+    background: green;
 }
 
 .contact .contact-form .form-control {
