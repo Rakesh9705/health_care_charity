@@ -1446,6 +1446,7 @@ a:focus {
     padding: 15px;
     height: 280px;
     display: flex;
+    background-color: #1E8BB8;
 }
 
 @media (max-width: 992px) {
@@ -1464,6 +1465,7 @@ a:focus {
 .event .event-meta p {
     position: relative;
     margin-bottom: 8px;
+    color: #ffffff;
     padding-bottom: 8px;
     /* white-space: nowrap; */
     border-bottom: 1px solid rgba(0, 0, 0, .15);
@@ -1474,7 +1476,7 @@ a:focus {
 }
 
 .event .event-meta i {
-    color: #4a4c70;
+    color: #FDBE33;
     width: 25px;
 }
 
@@ -1483,6 +1485,11 @@ a:focus {
     /* margin-left: 20px; */
     /* word-spacing: 2px; */
     padding-left: 12px;
+    color: #ffffff;
+}
+
+.event .event-text-heading {
+    color: #FDBE33;
 }
 
 .event .event-text::before {
