@@ -1145,6 +1145,50 @@ a:focus {
     font-weight: 600;
     margin: 0;
 }
+.facts {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    margin: 45px 0;
+    display: flex;
+    align-items: center;
+}
+
+.facts .facts-item {
+    display: flex;
+    flex-direction: row;
+    margin: 25px 0;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+    .facts {
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: auto;
+        padding: 20px;
+    }
+    .facts .facts-item {
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 0;
+    }
+    .facts .facts-item i {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .facts .facts-text {
+        padding-left: 0;
+        text-align: center;
+    }
+    .facts .facts-text h3 {
+        font-size: 35px;
+    }
+    .facts .facts-text p {
+        font-size: 18px;
+    }
+}
+
 
 
 /*******************************/
