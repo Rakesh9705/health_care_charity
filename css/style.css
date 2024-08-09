@@ -579,9 +579,17 @@ a:focus {
     background-size: cover;
 }
 
+/* @media (max-width: 992px) {
+    .causes-banner {
+        min-height: 200px;
+        height: 300px;
+        width: 100vw;
+    }
+} */
+
 .events-banner {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/events-banner.png);
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -589,7 +597,7 @@ a:focus {
 
 .gallery-banner {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/gallery-3.webp);
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -597,7 +605,15 @@ a:focus {
 
 .contact-banner {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/page-header\ -1.jpg);
-    background-attachment: fixed;
+    /* background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.meet-team-banner {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/meet-team-banner.png);
+    /* background-attachment: fixed; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -650,9 +666,11 @@ a:focus {
 
 @media (max-width: 991.98px) {
     .page-header {
-        padding: 60px 0;
+        /* padding: 60px 0; */
         min-height: 300px;
+        width: 100;
     }
+    .page-header 
     
     .page-header h1 {
         font-size: 45px;
