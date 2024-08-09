@@ -1333,7 +1333,7 @@ a:focus {
     position: relative;
     width: 100%;
     margin: 45px 0;
-    background: rgba(0, 0, 0, .5);
+   
 }
 
 .volunteer .volunteer-content {
@@ -1438,7 +1438,7 @@ a:focus {
 }
 
 .event-img {
-        border: 5px solid green; /* Bold green border */
+        border: 5px solid black; /* Bold green border */
         cursor: pointer;
 }
 
@@ -2356,3 +2356,4 @@ a:focus {
     border: 5px solid green; /* Bold green border */
     cursor: pointer;
 }
+
