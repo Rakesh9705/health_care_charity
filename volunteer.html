@@ -114,15 +114,15 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5">
                         <div class="volunteer-form">
-                            <form>
+                            <form id="VolunteerForm">
                                 <div class="control-group">
-                                    <input type="text" class="form-control" placeholder="Name" required="required" />
+                                    <input id="name1" type="text" class="form-control" placeholder="Name" required="required" />
                                 </div>
                                 <div class="control-group">
-                                    <input type="email" class="form-control" placeholder="Email" required="required" />
+                                    <input id="email1" type="email" class="form-control" placeholder="Email" required="required" />
                                 </div>
                                 <div class="control-group">
-                                    <textarea class="form-control" placeholder="Why you want to become a volunteer?" required="required"></textarea>
+                                    <textarea id="message1" class="form-control" placeholder="Why you want to become a volunteer?" required="required"></textarea>
                                 </div>
                                 <div>
                                     <button class="btn btn-custom" type="submit">Become a volunteer</button>
@@ -134,7 +134,7 @@
                         <div class="volunteer-content">
                             <div class="section-header">
                                 <p>Become A Volunteer</p>
-                                <h2>Let’s make a difference in the lives of others</h2>
+                                <h2 class="">Let’s make a difference in the lives of others</h2>
                             </div>
                             <div class="volunteer-text">
                                 <p>
@@ -235,37 +235,25 @@
         <!-- Form Submission -->
         <script>
 
-            const div = document.getElementById('Volunteer');
-            console.log(div)
-            const desktop = div.getAttribute('data-image-src-desktop');
-            const mobile = div.getAttribute('data-image-src-mobile');
-
-            if (window.innerWidth >= 768) {
-                div.setAttribute('data-image-src', `${desktop}`);
-            } else {
-                 div.setAttribute('data-image-src', `${mobile}`);
-            }
-
-            // console.log(div.getAttribute('data-image-src'))
-
-            document.getElementById("VolunteerForm").addEventListener("submit", function(event) {
+document.getElementById("VolunteerForm").addEventListener("submit", function(event) {
                 event.preventDefault(); // Prevent the form from submitting normally
                 
                 // Get form data
                 var formData = new FormData(this);
-                var name = document.getElementById("name").value;
-                var email = document.getElementById("email").value;
-                var message = document.getElementById("message").value;;
+                var name1 = document.getElementById("name1").value;
+                var email1 = document.getElementById("email1").value;
+                var message1 = document.getElementById("message1").value;
 
                 
                 // Format message for WhatsApp
-                var whatsappMessage = "Hello, this is " + name + ". My message is: " + message;
+                var whatsappMessage1 = "Hello, this is " + name1 + "\nemail: " + email1 + "\nMy message is: " + message1;
                 
+                // var whatsappMessage = "Hello, this is " + name + "\nEmail : " + email + "\nSubject: " + subject + "\nMy message is: " + message;
                 // Encode message for URL
-                var encodedMessage = encodeURIComponent(whatsappMessage);
+                var encodedMessage = encodeURIComponent(whatsappMessage1);
                 
                 // Open WhatsApp with the message
-                window.open("https://wa.me/9398910016?text=" + encodedMessage, "_blank");
+                window.open("https://wa.me/9246865672?text=" + encodedMessage, "_blank");
             });
             
         </script>

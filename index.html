@@ -357,7 +357,7 @@
                     <p class="pt-5">Founders Of Trust</p>
                     <h2>Founders whose vision and dedication created a beacon of trust.</h2>
                 </div>
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-lg-3 col-md-6 team-container">
                         <div class="team-item">
                             <div class="team-img">
@@ -413,11 +413,27 @@
                             </div>
                             <div class="team-text">
                                 <h2>Rithesh Vasireddy</h2>
-                                <p>####</p>
+                                <p>General  Secretary</p>
                                 <div class="team-social">
                                     <a href="https://www.facebook.com/rithesh.vasireddy/"><i class="fab fa-facebook-f"></i></a>
                                     <a href="https://www.instagram.com/vasireddyrithesh?igsh=cDdydmhzeWJpYzNp"><i class="fab fa-square-instagram"></i></a>
                                     <a href="https://wa.me/7893288000"><i class="fab fa-square-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 team-container">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/founder-5.jpg" alt="Team Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Sandhya Vasiredy</h2>
+                                <p>Joint Secretary</p>
+                                <div class="team-social">
+                                    <a href="https://m.facebook.com/narasimharao.vasireddy.750/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-square-instagram"></i></a>
+                                    <a href="https://wa.me/9246865672"><i class="fab fa-square-whatsapp"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -646,7 +662,7 @@
                     <p>Meet Our Team</p>
                     <h2>Awesome guys behind our charity activities</h2>
                 </div>
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-lg-3 col-md-6 team-container">
                         <div class="team-item">
                             <div class="team-img" style="background-color: #1E8BB8;">
@@ -741,13 +757,13 @@
                         <div class="volunteer-form">
                             <form id="VolunteerForm">
                                 <div class="control-group">
-                                    <input id="name" type="text" class="form-control" placeholder="Name" required="required" />
+                                    <input id="name1" type="text" class="form-control" placeholder="Name" required="required" />
                                 </div>
                                 <div class="control-group">
-                                    <input id="email" type="email" class="form-control" placeholder="Email" required="required" />
+                                    <input id="email1" type="email" class="form-control" placeholder="Email" required="required" />
                                 </div>
                                 <div class="control-group">
-                                    <textarea id="message" class="form-control" placeholder="Why you want to become a volunteer?" required="required"></textarea>
+                                    <textarea id="message1" class="form-control" placeholder="Why you want to become a volunteer?" required="required"></textarea>
                                 </div>
                                 <div>
                                     <button class="btn btn-custom" type="submit">Become a volunteer</button>
@@ -759,10 +775,10 @@
                         <div class="volunteer-content">
                             <div class="section-header">
                                 <p>Become A Volunteer</p>
-                                <h2>Let’s make a difference in the lives of others</h2>
+                                <h2 class="text-dark">Let’s make a difference in the lives of others</h2>
                             </div>
                             <div class="volunteer-text">
-                                <p style="color: black; font-weight: bold;">
+                                <p style="color: #ffffff; font-weight: bold;">
                                     Are you passionate about healthcare and eager to make a meaningful impact in your community? Join our team of dedicated volunteers at Vasireddy Health Care Founddation and be part of an inspiring journey towards better health and well-being for all.
                                     <br />
                                     <br />
@@ -858,21 +874,21 @@
                 </div>
                 <div class="contact-form">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" action="https://formsubmit.co/rakeshchinni9985@gmail.com" method="POST">
+                        <form id="ContactForm">
                             <div class="control-group">
-                                <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                <input type="text" class="form-control" id="name2" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input name="email" type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                <input type="email" class="form-control" id="email2" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea name="message" class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <textarea class="form-control" id="message2" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
@@ -1005,11 +1021,10 @@
         <!-- Icon Font libraries -->
         <script src="https://kit.fontawesome.com/2b1680067f.js" crossorigin="anonymous"></script>
         
-        <!-- Form Submission -->
+        <!--Form Submission-->
         <script>
 
             const div = document.getElementById('Volunteer');
-            console.log(div)
             const desktop = div.getAttribute('data-image-src-desktop');
             const mobile = div.getAttribute('data-image-src-mobile');
 
@@ -1026,21 +1041,45 @@
                 
                 // Get form data
                 var formData = new FormData(this);
-                var name = document.getElementById("name").value;
-                var email = document.getElementById("email").value;
-                var message = document.getElementById("message").value;;
+                var name1 = document.getElementById("name1").value;
+                var email1 = document.getElementById("email1").value;
+                var message1 = document.getElementById("message1").value;
 
                 
                 // Format message for WhatsApp
-                var whatsappMessage = "Hello, this is " + name + ". My message is: " + message;
+                var whatsappMessage1 = "Hello, this is " + name1 + "\nemail: " + email1 + "\nMy message is: " + message1;
                 
+                // var whatsappMessage = "Hello, this is " + name + "\nEmail : " + email + "\nSubject: " + subject + "\nMy message is: " + message;
                 // Encode message for URL
-                var encodedMessage = encodeURIComponent(whatsappMessage);
+                var encodedMessage = encodeURIComponent(whatsappMessage1);
                 
                 // Open WhatsApp with the message
-                window.open("https://wa.me/9398910016?text=" + encodedMessage, "_blank");
+                window.open("https://wa.me/9246865672?text=" + encodedMessage, "_blank");
             });
             
+            document.getElementById("ContactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            
+            // Get form data
+            var formData = new FormData(this);
+            
+            var name2 = document.getElementById("name2").value;
+            var subject = document.getElementById("subject").value;
+            var email2 = document.getElementById("email2").value;
+            var message2 = document.getElementById("message2").value;
+            
+
+
+            
+            // Format message for WhatsApp
+            var whatsappMessage2 = "Hello, this is " + name2 + "\nEmail : " + email2 + "\nSubject: " + subject + "\nMy message is: " + message2;
+            console.log(whatsappMessage2)
+            // Encode message for URL
+            var encodedMessage = encodeURIComponent(whatsappMessage2);
+            
+            // Open WhatsApp with the message
+            window.open("https://wa.me/9246865672?text=" + encodedMessage, "_blank");
+        });
         </script>
 
     </body>
