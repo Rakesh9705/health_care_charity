@@ -2321,6 +2321,28 @@ a:focus {
 }
 
 
+/* 404 page css */
+
+.error-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-heading {
+    font-family: "Roboto";
+    font-size: 70px;
+    color: #1E8BB8;
+}
+
+.back-home-btn a {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
 /*******************************/
 /********* Footer CSS **********/
 /*******************************/
