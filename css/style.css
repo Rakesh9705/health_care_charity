@@ -157,6 +157,7 @@ a:focus {
     left: 0;
     z-index: 3;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
+    display: none !important;
 }
 
 .top-bar .top-bar-left {
@@ -315,9 +316,9 @@ a:focus {
     .navbar {
         /* position: absolute; */
         width: 100%;
-        top: 45px;
-        background: black !important;
-        border-bottom: 1px solid rgba(255, 255, 255, .3);
+        /* top: 45px; */
+        /* background: black !important; */
+        /* border-bottom: 1px solid rgba(255, 255, 255, .3); */
         z-index: 9;
     }
     
@@ -358,7 +359,9 @@ a:focus {
 /********** Hero CSS ***********/
 /*******************************/
 .carousel {
-    position: relative;
+    position:absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     /* min-height: 300px; */
     background: white;
