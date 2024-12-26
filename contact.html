@@ -125,19 +125,19 @@
                         <div id="success"></div>
                         <form name="sentMessage" id="ContactForm" novalidate="novalidate">
                             <div class="control-group">
-                                <input type="text" class="form-control" id="name2" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                <input type="text" class="form-control" id="name2" placeholder="Your Name" required data-validation-required-message="Please enter your name" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="email" class="form-control" id="email2" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                <input type="email" class="form-control" id="email2" placeholder="Your Email" required data-validation-required-message="Please enter your email" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                <input type="text" class="form-control" id="subject" placeholder="Subject" required data-validation-required-message="Please enter a subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control" id="message2" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <textarea class="form-control" id="message2" placeholder="Message" required data-validation-required-message="Please enter your message"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
@@ -250,8 +250,26 @@
             console.log(email2)
             console.log(message2)
             console.log(subject)
-
-
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (name2 == "") {
+                alert("Please enter your Name");
+                return;
+            }
+            else if (email2 === "") {
+                alert("Please enter your Email");
+                return;
+            } else if (!emailPattern.test(email2)) {
+                alert("Please enter your Email in correct format");
+                return;
+            }
+            else if (subject == "") {
+                alert("Please enter your Subject");
+                return;
+            }
+            else if (message2 == "") {
+                alert("Please enter your Message");
+                return;
+            }
             
             // Format message for WhatsApp
             var whatsappMessage2 = "Hello, this is " + name2 + "\nEmail : " + email2 + "\nSubject: " + subject + "\nMy message is: " + message2;
