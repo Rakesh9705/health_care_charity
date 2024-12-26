@@ -2484,3 +2484,23 @@ flex-direction: column;
   font-size: 1rem;
  margin: 0;
 }
+#whatsapp-button {
+  position: fixed;
+  bottom: 4rem;
+  /* Distance from the bottom */
+  right: 0.8rem;
+  /* Distance from the right */
+  z-index: 9999;
+  /* Ensures it's always on top */
+}
+
+#whatsapp-button i {
+  font-size: 2rem;
+  border-radius: 50%;
+  background-color: #25D366;
+  /* WhatsApp brand color */
+  padding: 10px;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Optional shadow */
+}
